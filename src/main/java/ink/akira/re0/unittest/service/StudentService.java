@@ -8,6 +8,4 @@ package ink.akira.re0.unittest.service;
  */
 public interface StudentService {
     String helloStudent(long studentId);
-
-    String newStudent(String studentName);
 }

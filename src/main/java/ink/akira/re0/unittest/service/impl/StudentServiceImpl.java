@@ -21,9 +21,4 @@ public class StudentServiceImpl implements StudentService {
     public String helloStudent(long studentId) {
         return "hello:" + outerService.getStudentName(studentId);
     }
-
-    @Override
-    public String newStudent(String studentName) {
-        return "hello, i am a new student, and my name is: " + studentName;
-    }
 }

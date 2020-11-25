@@ -17,19 +17,13 @@ import static org.junit.Assert.*;
  */
 @SpringBootTest
 @RunWith(SpringRunner.class)
-public class StudentServiceTest {
+public class HelloServiceTest {
     @Resource
-    private StudentService studentService;
-
-    @Test
-    public void testNewStudent() {
-        String erGo = studentService.newStudent("ErGo");
-        assertNotNull(erGo);
-    }
+    private HelloService helloService;
 
     @Test
     public void testHello() {
-        String hello = studentService.helloStudent(112L);
-        assertNotNull(hello);
+        String erGo = helloService.hello("ErGo");
+        assertNotNull(erGo);
     }
 }
